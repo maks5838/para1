@@ -1,22 +1,59 @@
-def add(self, x, y):
-    return x + y
+class Human:
+    eyes = 2
+    legs = 2
+    hands= 2
 
 
-def subtract(self, x, y):
-    return x - y
+
+class Student(Human):
+    isStuding = True
+
+class Worker(Student):
+    age = 25
+
+print(Student.hands)
+print(Worker.age)
+print(Worker.isStuding)
 
 
-def multiply(self, x, y):
-    return x * y
+class ITStep:
+    __student = "BoyAndGirl"
+    def __init__(self):
+        print(self. __student)
 
 
-def divide(self, x, y):
-    if y == 0:
-        return "Ділення на нуль неможливе"
-    else:
-        return x / y
-    calculator_1 = calculator()
-    print("Сума:", calc.add(4+3))
-    print("Різниця:", calc.subtract(10-4))
-    print("Добуток:", calc.multiply(2*6))
-    print("Частка:", calc.divide(8/2))
+
+j = ITStep()
+# print(ITStep.__student)
+class Grandparent:
+    def about(self):
+        print("I am GrandParent")
+    def about_myself(self):
+        print("I am Grandparent")
+class Parent(Grandparent):
+    def about_myself(self):
+        print("I am Parent")
+class Child(Parent):
+    def __init__(self):
+        super().about()
+        super().about_myself()
+nick = Child()
+
+
+
+
+class CPU:
+    def working(self):
+        print("Працюю дуже потужно")
+
+class Display:
+    def show(self):
+        print("Показую меми")
+
+
+class SmartPhone(CPU, Display):
+    pass
+
+xiaomi = SmartPhone()
+xiaomi.working()
+xiaomi.show()
