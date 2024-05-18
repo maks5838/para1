@@ -1,16 +1,16 @@
 import inspect
-import requ.ests
-import  sys
-
-
-
-
-
-class Human:
-    pass
+# import requ.ests
+# import  sys
 #
-def my_function():
-    pass
+#
+#
+#
+#
+# class Human:
+#     pass
+# #
+# def my_function():
+#     pass
 #
 # print(type(requests))
 # number = 10
@@ -38,14 +38,35 @@ def my_function():
 # print(inspect.isfunction(my_function))
 # print(inspect.getmodule(requests.get))
 # print(inspect.getmodule(list))
-
-print(sys.executable)
-print(sys.version)
-print(sys.platform)
-print(sys.argv)
-# for module_name, module_path in sys.modules.items():
-#     print(module_name, module_path)
+#
 
 
-for _ in dir(__builtins__):
-    print(_)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+користувачі = {
+    'Максим': 13,
+    'Єва': 12,
+    'Андрій': 14
+}
+
+# Запитуємо у користувача ім'я
+ім_я = input("Будь ласка, введіть ім'я користувача: ")
+
+# Перевіряємо, чи є таке ім'я у словнику
+if ім_я in користувачі:
+    print(f"Вік користувача {ім_я}: {користувачі[ім_я]} років.")
+else:
+    print("Користувача з таким ім'ям не знайдено у словнику.")
